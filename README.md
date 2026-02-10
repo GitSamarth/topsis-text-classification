@@ -114,7 +114,7 @@ Score = Distance from Worst / (Distance from Best + Distance from Worst)
 ## 📈 Result Visualization
 
 A bar chart of TOPSIS scores was generated to visually compare models:
-
+plots/topsis_bar_chart.png
 
 The graph clearly shows DistilBERT achieving the highest score, indicating the best overall balance among all criteria.
 
