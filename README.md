@@ -91,4 +91,61 @@ TOPSIS was applied using the following steps:
 3. Determine ideal best and ideal worst solutions  
 4. Calculate Euclidean distance from ideal best and worst  
 5. Compute TOPSIS score  
+Score = Distance from Worst / (Distance from Best + Distance from Worst)
+
+
+6. Rank models based on score  
+
+---
+
+## 🏆 Results
+
+### TOPSIS Ranking
+
+| Rank | Model | TOPSIS Score |
+|------|-------|--------------|
+| 1 | DistilBERT | 0.7308 |
+| 2 | ALBERT | 0.6065 |
+| 3 | BERT | 0.3309 |
+| 4 | RoBERTa | 0.0896 |
+
+---
+
+## 📈 Result Visualization
+
+A bar chart of TOPSIS scores was generated to visually compare models:
+
+
+The graph clearly shows DistilBERT achieving the highest score, indicating the best overall balance among all criteria.
+
+---
+
+## ✅ Final Conclusion
+
+Although ALBERT has the smallest model size, its lower predictive performance reduced its overall score.  
+RoBERTa showed relatively high computational cost with limited accuracy gains.
+
+**DistilBERT achieved the highest TOPSIS score (0.73)** due to:
+
+- Highest accuracy  
+- Highest F1 score  
+- Fastest inference  
+- Moderate model size  
+
+Therefore, **DistilBERT is selected as the optimal pretrained model for text classification** in this study.
+
+---
+## 🔮 Future Work
+
+- Fine-tuning models on domain-specific datasets  
+- Sensitivity analysis of TOPSIS weights  
+- Deployment benchmarking  
+- Inclusion of energy consumption metrics  
+
+---
+
+## 🧠 Key Learning
+
+This project demonstrates how **multi-criteria decision making** can be effectively combined with NLP to select models suitable for real-world deployment rather than relying only on accuracy.
+
 
